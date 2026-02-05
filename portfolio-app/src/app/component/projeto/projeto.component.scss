@@ -214,3 +214,38 @@
         }
     }
 }
+
+@media (max-width: 560px) {
+
+    .container-project.b {
+
+        .container-content {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 260px;
+            }
+
+            .container-text {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .container-project {
+
+        .container-content {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 260px;
+            }
+
+            .container-text {
+                margin-top: 20px;
+            }
+        }
+    }
+}
