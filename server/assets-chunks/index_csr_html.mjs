@@ -4,7 +4,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>Portfolio - EBS</title>
-  <base href="Portfolio-EBS">
+  <base href="/Portfolio-EBS/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
