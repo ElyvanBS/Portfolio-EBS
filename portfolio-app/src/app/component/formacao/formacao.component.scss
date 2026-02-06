@@ -146,21 +146,31 @@
         flex-direction: column;
         gap: 4rem;
 
+        .container-box.a,
+        .container-box.b {
+            padding: 25px;
+
+        }
+
         .container-box.c {
 
             background-color: #181818;
             width: 100%;
             height: max-content;
-            padding: 35px;
+            padding: 25px;
             border-radius: 10px;
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
             color: white;
 
+            .container-content {
+
+                margin-left: 0px;
+            }
 
             img {
-                height: 270px;
+                height: 190px;
                 margin-bottom: 25px;
             }
 
@@ -209,5 +219,8 @@
         }
     }
 
+    .container-division {
+    margin: 40px 0px;
+    }
 
 }

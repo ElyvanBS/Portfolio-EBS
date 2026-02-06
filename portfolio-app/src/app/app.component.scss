@@ -53,6 +53,24 @@ header {
     background: var(--cor-gradient-primaria);
 }
 
+footer {
+    height: fit-content;
+    background: var(--cor-gradient-division);
+
+    .container-sup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        font-size: var(--font-size-texto);
+        font-weight: 700;
+        height: 35px;
+        width: 100%;
+        background: var(--cor-gradient-primaria);
+    }
+}
+
 @media (max-width: 1440px) {
     header {
         flex-direction: column;

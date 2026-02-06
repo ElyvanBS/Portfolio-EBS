@@ -1,0 +1,268 @@
+.container-division {
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+
+    color: #fff;
+    background: var(--cor-gradient-division);
+    border-bottom: 4px solid #512E95;
+
+    h3 {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-weight: 600;
+
+        i {
+            font-weight: 200;
+        }
+    }
+}
+
+.container-contato {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    padding: 0px 80px;
+
+    .box-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 400px;
+        }
+
+        .line-img {
+            height: 8px;
+            width: 100%;
+            background: var(--cor-gradient-primaria);
+        }
+    }
+
+
+    .container-content {
+        width: 100%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+
+            button {
+                height: 40px;
+                background: var(--cor-gradient-primaria);
+                border: none;
+                color: white;
+                font-weight: 800;
+                cursor: pointer;
+                border-radius: 5px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                &:hover {
+
+                    i {
+                        margin-top: 6px;
+                    }
+
+                }
+
+                i {
+
+                    transition: 0.5s all;
+
+                }
+            }
+        }
+    }
+}
+
+.box-mensagem {
+    position: relative;
+    width: 100%;
+
+    input {
+        width: 50%;
+    }
+
+    input,
+    textarea {
+        padding: 14px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 130px;
+        resize: vertical;
+    }
+
+    span {
+        position: absolute;
+        left: 20px;
+        color: #555;
+        background: #fff;
+        padding: 0 6px;
+        border-radius: 10px;
+        pointer-events: none;
+        transition: all 0.25s ease;
+    }
+
+    input+span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    textarea+span {
+        top: 18px;
+        transform: none;
+    }
+
+    input:focus+span,
+    textarea:focus+span,
+    input:not(:placeholder-shown)+span,
+    textarea:not(:placeholder-shown)+span {
+        top: -3px;
+        font-size: 12px;
+        color: #512E95;
+    }
+}
+
+@media (max-width: 1540px) {
+
+    .container-contato {
+
+        .box-img {
+
+            img {
+                width: 320px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1340px) {
+
+    .container-contato {
+
+        .box-img {
+
+            img {
+                width: 280px;
+            }
+        }
+    }
+
+    .box-mensagem {
+
+        input,
+        textarea {
+            padding: 10px 20px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .container-contato {
+        display: flex;
+        gap: 70px;
+        width: 100%;
+        padding: 0px 40px;
+
+        .box-img {
+
+            img {
+                width: 250px;
+            }
+        }
+    }
+
+    .box-mensagem {
+
+        input {
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            padding: 10px 20px;
+
+        }
+
+    }
+
+
+}
+
+@media (max-width: 950px) {
+
+    .container-contato {
+
+        flex-direction: column;
+
+        .box-img {
+            width: fit-content;
+            margin: 0px auto;
+
+            img {
+                width: 300px;
+            }
+
+            .line-img {
+                width: 100%;
+            }
+        }
+    }
+
+    .box-mensagem {
+
+        input {
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            padding: 10px 20px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 660px) {
+    .container-contato {
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        padding: 0px 0px;
+
+        .box-img {
+
+            img {
+                width: 220px;
+            }
+        }
+    }
+
+    .container-division {
+    margin: 40px 0px;
+    }
+}
