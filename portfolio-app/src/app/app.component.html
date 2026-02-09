@@ -4,10 +4,10 @@
   <nav>
 
     <ul>
-      <li><i class="ri-graduation-cap-fill"></i><span>Formação Acadêmica</span></li>
-      <li><i class="ri-box-3-line"></i><span>Projetos</span> </li>
-      <li><i class="ri-user-line"></i><span>Sobre Mim</span></li>
-      <li><i class="ri-customer-service-line"></i><span>Contate-me</span></li>
+      <li><a href="#sobre"><i class="ri-user-line"></i><span>Sobre Mim</span></a></li>
+      <li><a href="#formacao"><i class="ri-graduation-cap-fill"></i><span>Formação Acadêmica</span></a></li>
+      <li><a href="#projeto"><i class="ri-box-3-line"></i><span>Projetos</span></a></li>
+      <li><a href="#contato"><i class="ri-customer-service-line"></i><span>Contate-me</span></a></li>
     </ul>
 
   </nav>
@@ -16,10 +16,13 @@
 <div class="gradient-header"></div>
 <main>
 
-  <app-sobre></app-sobre>
-  <app-formacao></app-formacao>
-  <app-projeto></app-projeto>
-  <app-contato></app-contato>
+   <a href="#sobre"><div class="container-retorno"><i class="ri-arrow-up-s-line"></i></div></a>
+
+  <app-sobre id="sobre"></app-sobre>
+  <app-formacao id="formacao"></app-formacao>
+  <app-projeto id="projeto"></app-projeto>
+  <app-contato id="contato"></app-contato>
+
   <router-outlet></router-outlet>
 
 </main>

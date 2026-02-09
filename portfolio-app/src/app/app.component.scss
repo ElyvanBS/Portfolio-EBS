@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     background: var(--cor-header);
@@ -22,24 +23,31 @@ header {
             margin: 0;
 
             li {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 0.8em;
                 list-style: none;
-                color: white;
-                cursor: pointer;
-                transition: 0.5s all;
-                font-size: var(--font-size-texto);
 
-                span {
-                    font-weight: 600;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.8em;
+                    color: white;
+                    cursor: pointer;
+                    transition: 0.5s all;
+                    font-size: var(--font-size-texto);
+                    text-decoration: none;
+
+                    span {
+                        font-weight: 600;
+                    }
+
+                    &:hover {
+                        font-size: 0.98rem;
+                        opacity: 0.7;
+                    }
                 }
 
-                &:hover {
-                    font-size: 0.98rem;
-                    opacity: 0.7;
-                }
+
+
             }
         }
 
@@ -68,6 +76,21 @@ footer {
         height: 35px;
         width: 100%;
         background: var(--cor-gradient-primaria);
+    }
+}
+
+.container-retorno {
+    background: var(--cor-gradient-primaria);
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    i{
+    font-size: var(--font-size-h3);
     }
 }
 
