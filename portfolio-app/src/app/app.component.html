@@ -13,14 +13,14 @@
   </nav>
 
 </header>
-<div class="gradient-header"></div>
+<div class="gradient-header-footer"></div>
 <main>
 
-<a href="#sobre">
-  <div class="container-retorno" [class.visible]="mostrarSup">
-    <i class="ri-arrow-up-s-line"></i>
-  </div>
-</a>
+  <a href="#sobre">
+    <div class="container-retorno" [class.visible]="mostrarSup">
+      <i class="ri-arrow-up-s-line"></i>
+    </div>
+  </a>
 
   <app-sobre id="sobre"></app-sobre>
   <app-formacao id="formacao"></app-formacao>
@@ -30,10 +30,63 @@
   <router-outlet></router-outlet>
 
 </main>
+<div class="gradient-header-footer"></div>
+
 <footer>
 
-  <div class="container-sup">
-    <span>Retornar ao Topo <i class="ri-arrow-up-s-line"></i></span>
+
+  <div class="footer-content">
+
+    <div class="box-footer">
+      <div class="footer-title">
+        <h3><i class="ri-navigation-line"></i></h3>
+        <h3>Navegação:</h3>
+      </div>
+      <div class="line-footer"></div>
+
+      <ul>
+
+        <a href="#sobre">
+          <li>Sobre Mim</li>
+        </a>
+        <a href="#formacao">
+          <li>Formação Acadêmica</li>
+        </a>
+        <a href="#projeto">
+          <li>Projetos</li>
+        </a>
+        <a href="#contato">
+          <li>Contate-me</li>
+        </a>
+      </ul>
+
+    </div>
+
+    <div class="line-sup"></div>
+
+    <div class="box-footer">
+      <div class="footer-title">
+        <h3><i class="ri-customer-service-line"></i></h3>
+        <h3>Contate-me:</h3>
+      </div>
+      <div class="line-footer"></div>
+
+      <ul>
+
+        <a href="#">
+          <li>Email: elyvanbs&#64;gmail.com</li>
+        </a>
+        <a href="#">
+          <li>Linkedin: &#64;elyvanbs</li>
+        </a>
+        <a href="#">
+          <li>Instagram: &#64;elyvan.bs</li>
+        </a>
+ 
+      </ul>
+
+    </div>
+
   </div>
 
 </footer>

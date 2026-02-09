@@ -2,9 +2,8 @@
 :root {
 
     /* Cores */
-
     --cor-fundo: #111111;
-    --cor-header: linear-gradient(to top, #0f0f0f, #00000000);
+    --cor-header: linear-gradient(to top, #0f0f0f, #000000d1);
     --cor-gradient-primaria: linear-gradient(to right, #43257A, #6C3CC7);
     --cor-gradient-hover: linear-gradient(to right, #2d1755, #48258a);
     --cor-gradient-division: linear-gradient(to top, #43257A, #6d3cc700);
@@ -12,6 +11,7 @@
     --cor-primaria: #512E95;
     --cor-secundaria: #AB7EFF;
     --cor-tercearia: #7340D2;
+
     /* Tamanho dos Textos*/
     --font-size-h1: 2rem;
     --font-size-h2: 1.625rem;
