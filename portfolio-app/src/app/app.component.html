@@ -16,7 +16,11 @@
 <div class="gradient-header"></div>
 <main>
 
-   <a href="#sobre"><div class="container-retorno"><i class="ri-arrow-up-s-line"></i></div></a>
+<a href="#sobre">
+  <div class="container-retorno" [class.visible]="mostrarSup">
+    <i class="ri-arrow-up-s-line"></i>
+  </div>
+</a>
 
   <app-sobre id="sobre"></app-sobre>
   <app-formacao id="formacao"></app-formacao>
