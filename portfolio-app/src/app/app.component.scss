@@ -145,6 +145,7 @@ footer {
 .container-retorno {
     background: var(--cor-gradient-primaria);
     position: fixed;
+    z-index: 1000;
     right: 40px;
     bottom: 100px;
     padding: 10px;
@@ -242,7 +243,9 @@ footer {
         .footer-content {
             flex-direction: column;
             gap: 50px;
-
+            justify-content: start;
+            align-items: start;
+            margin-left: 6%;
             .line-sup{
             display: none;
             }
