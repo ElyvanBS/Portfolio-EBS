@@ -67,10 +67,15 @@
                 align-items: center;
                 gap: 10px;
 
+                i {
+                    transform: rotate(-90deg);
+
+                }
+
                 &:hover {
 
                     i {
-                        margin-top: 6px;
+                        margin-left: 6px;
                     }
 
                 }
@@ -262,6 +267,6 @@
     }
 
     .container-division {
-    margin: 40px 0px;
+        margin: 40px 0px;
     }
 }
